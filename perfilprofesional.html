@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Perfil Personal</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>    
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="perfilprofesional.html">Perfil Profesional</a></li>
+            <li><a href="galeriadeimagenes.html">Galeria de Imágenes</a></li>
+            <li><a href="blogprofesional.html">Blog Profesional</a></li>
+        </ul>
+    </nav>
+    <section id="biografia">
+        <h2>Biografía de Juan Pérez</h2>
+        <p>Juan Pérez es un destacado futbolista internacional, nacido el 15 de julio de 1990. Con una carrera que abarca más de una década, ha sido parte de varios clubes importantes y ha representado a su país en múltiples competiciones. Conocido por su habilidad en el campo, su disciplina y su liderazgo, Juan es una inspiración para muchos jóvenes deportistas.</p>
+    </section>
+    <section id="habilidades">
+        <h2>Carrera Profesional</h2>
+        <table>
+            <tr>
+                <th>Año</th>
+                <th>Equipo</th>
+                <th>Logros</th>
+            </tr>
+            <tr>
+                <td>2010</td>
+                <td>Club Deportivo ABC</td>
+                <td>Mejor Jugador Joven</td>
+            </tr>
+            <tr>
+                <td>2013</td>
+                <td>Equipo Internacional XYZ</td>
+                <td>Campeón de Liga</td>
+            </tr>
+            <tr>
+                <td>2016</td>
+                <td>Club Nacional</td>
+                <td>Máximo Goleador</td>
+            </tr>
+            <tr>
+                <td>2018</td>
+                <td>Club Nacional</td>
+                <td>Campeón de Copa</td>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td>Selección Nacional</td>
+                <td>Participación en Copa del Mundo</td>
+            </tr>
+        </table>
+    </section>
+    <section id="contacto">
+        <h3>Currículum</h3>
+        <p>Puedes descargar mi currículum completo en formato PDF haciendo clic en el enlace a continuación:</p>
+        <a href="docs/CV_Marcos_Ortiz.pdf" target="_blank" download>Descargar Currículum (PDF)</a>
+
+        <h3>Contacto</h3>
+        <p>Email: marcos17.maog.ma@gmail.com</p>
+
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/marcos-ortiz-gomez-003815210/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/MarcosOrtiz19" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; Marcos Abraham Ortiz Gomez | <span id="fecha"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById("fecha").textContent = new Date().toLocaleDateString();
+    </script>
+    
+</body>
+</html>

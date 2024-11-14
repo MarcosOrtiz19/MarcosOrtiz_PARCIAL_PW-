@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Personal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="perfilprofesional.html">Perfil Profesional</a></li>
+            <li><a href="galeriadeimagenes.html">Galeria de Imágenes</a></li>
+            <li><a href="blogprofesional.html">Blog Profesional</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Blog Profesional de Juan Pérez</h1>
+        <p>Explora los pasos más importantes en la carrera de Juan Pérez, desde sus primeros clubes hasta las competencias internacionales.</p>
+    </header>
+
+    <section class="career-step">
+        <div class="step" id="step1">
+            <img src="img/club.jpeg" alt="Club Deportivo ABC">
+            <h2>Club Deportivo ABC</h2>
+            <p>Juan Pérez comenzó su carrera en el Club Deportivo ABC en 2010, destacándose rápidamente como uno de los jugadores jóvenes más prometedores. Durante este tiempo, desarrolló sus habilidades y obtuvo el premio al Mejor Jugador Joven.</p>
+            <a href="https://es.m.wikipedia.org/wiki/Archivo:Jamaica_FA.svg" target="_blank" class="read-more">Leer más</a>
+        </div>
+
+        <div class="step" id="step2">
+            <img src="img/competicion.jpeg" alt="Competencia XYZ">
+            <h2>Competencia Internacional XYZ</h2>
+            <p>En 2013, Juan participó en su primera competencia internacional con el equipo XYZ, donde mostró su gran talento y ayudó a su equipo a lograr el campeonato. Este logro fue un paso significativo en su carrera.</p>
+            <a href="https://www.lanacion.com.ar/deportes/atletismo/bolt-bajo-los-10-segundos-pero-esta-triste-se-acerca-el-final-nid2046133/" target="_blank" class="read-more">Leer más</a>
+        </div>
+
+        <div class="step" id="step3">
+            <img src="img/nacional.jpeg" alt="Selección Nacional">
+            <h2>Selección Nacional</h2>
+            <p>En 2021, Juan fue seleccionado para representar a su país en la Copa del Mundo. Este honor marcó un punto culminante en su carrera, demostrando su habilidad y dedicación al deporte a nivel internacional.</p>
+            <a href="https://historiauniversal.org/jamaica/" target="_blank" class="read-more">Leer más</a>
+        </div>
+    </section>
+
+    <script>
+        // Función para detectar y animar cada sección cuando entra en vista
+        function revealSteps() {
+            const steps = document.querySelectorAll('.step');
+            steps.forEach(step => {
+                const stepPosition = step.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.3;
+    
+                if (stepPosition < screenPosition) {
+                    step.classList.add('show');
+                }
+            });
+        }
+    
+        window.addEventListener('scroll', revealSteps);
+    </script>
+    
+    <footer>
+        <p>&copy; Marcos Abraham Ortiz Gomez | <span id="fecha"></span></p>
+    </footer>
+
+    <script>
+        document.getElementById("fecha").textContent = new Date().toLocaleDateString();
+    </script>
+
+</body>
+</html>
